@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    align-items: center;
+    justify-content: center;
+    background: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* display: flex; */
+    background: url('5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.name {
+    margin-top: 10px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 24px;  
+}
+.details {
+    color: #fff;
+    display: flex;
+}
+.section_education{
+    box-sizing:border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    background-color:darkslategray;
+}
+.section_education ul{
+    display: block;
+}
+.section_skills{
+    box-sizing: content-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    margin-left: 120px;
+    /* padding: auto; */
+    padding: 20px;
+    background-color:darkslategray;
+    border-radius: 10px;
+}
+.section_social{
+    box-sizing: border-box;
+    background-color:darkslategray;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-left: auto;
+    /* padding: auto; */
+    padding: 20px;
+    justify-content: center;
+
+    border-radius: 10px;
+}
+.heading_education{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+    background-color: darkslategray;
+}
+ul li a{
+    display: block;
+    padding: 0 0;
+    color: #fff;
+    text-decoration: underline;
+    border-radius: 7px;
+    text-align: left;
+    font-size: 20px;
+}
+ul li ul.abc li{
+    display: block;
+}
+ul li ul.skills li{
+    display: block;
+}
+ul li ul.social li{
+    display: block;
+}
+ul li ul.abc{
+    width: 100%;
+    background-color:aquamarine;
+    font-size: 16px;
+    /* margin-top: 8px; */
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    border-radius: 7px;
+    position: relative;
+    /* text-decoration: none; */
+    z-index: 999;
+    display: none;
+}
+
+ul li ul.skills{
+    width: 100%;
+    background-color:aquamarine;
+    font-size: 16px;
+    /* margin-top: 8px; */
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    border-radius: 7px;
+    position: relative;
+    /* text-decoration: none; */
+    z-index: 999;
+    display: none;
+}
+ul li ul.social{
+    width: 100%;
+    background-color:aquamarine;
+    font-size: 16px;
+    /* margin-top: 8px; */
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 5px;
+    border-radius: 7px;
+    position: relative;
+    /* text-decoration: none; */
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{ 
+    background-color: aquamarine;
+    color: black;
+    text-decoration: none;
+}
+ul li:hover ul.abc{
+    display: block;
+    text-decoration: none;
+    background-color: #307ae1;
+}
+ul li:hover ul.skills{
+    display: block;
+    text-decoration: none;
+    background-color: #307ae1;
+}
+ul li:hover ul.social{
+    display: block;
+    text-decoration: none;
+    background-color: #307ae1;
+}
+.heading_skills{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.heading_social{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content_education{
+    font-size: 16px;
+}
+.section_education ul{
+    list-style: none;
+}
+#abc{
+    visibility: hidden;
+    z-index: 1;
+    top: 35px;
+}
+.section_education:hover ul#abc{
+    visibility: visible;
+    top: 80px;
+    opacity: 1;
+}
+li:hover ul#abc{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+.section_skills ul{
+    list-style: none;
+}
+#skills{
+    visibility: hidden;
+    z-index: 1;
+    top: 35px;
+}
+.section_skills:hover ul#skills{
+    visibility: visible;
+    top: 80px;
+    opacity: 1;
+}
+
+.section_social ul{
+    list-style: none;
+}
+#social{
+    visibility: hidden;
+    z-index: 1;
+    top: 35px;
+}
+.section_social:hover ul#social{
+    visibility: visible;
+    top: 80px;
+    opacity: 1;
+}
+.content_skills{
+    font-size: 16px;
+}
+
+.content_social{
+    font-size: 16px;
+    margin-left: 8px;
+    justify-content: center;
+    align-items: center;
+
+}
+.link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.link.fb {
+    background-color: #4267b2;
+}
+
+.link.insta {
+    background-color: #e1306c;
+}
+
+.link.linkedin {
+    background-color: #2867b2;
+}
+
+.link.youtube {
+    background-color: #ff0000;
+}
