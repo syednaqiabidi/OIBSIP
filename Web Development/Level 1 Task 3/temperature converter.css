@@ -1,0 +1,103 @@
+body{
+    position: relative;
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background: url('6.jpg') no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
+    opacity: 1; 
+}
+
+.background_image .img_1{
+    padding: 0;
+    margin: 0;
+    margin-left: 130px;
+    margin-top: 150px;
+    border-radius: 35px;
+}
+
+.background_image .img_2{
+    padding: 0;
+    margin: 0;
+    margin-left: 780px;
+    margin-top: 150px;
+    border-radius: 35px;
+}
+.converter{
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 655px;
+    margin-top: -480px;
+    background: url(10.jpg);
+    width: 300px;
+    height: auto;
+    color: #000;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 40px 40px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    
+}
+.converter .button .clear_button{
+    height: 40px;
+    width: 120px;
+    margin-right: 25px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.converter .button .clear_button:hover{
+    background-color:darkgreen;
+    color: white;
+}
+.converter .button .convert_button{
+    height: 40px;
+    width: 120px;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-top: 45px;
+    margin-bottom: 45px; 
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700; 
+}
+.converter .button .convert_button:hover{
+    
+    background-color:crimson;
+    color: white;
+}
+.converter .temperature_converter input{
+    height: 35px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+}
+.converter .temperature_converter select{
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+    font-size: 20px;
+}
+.converter .temperature_converter p{
+    text-align: left;
+    margin-left: 50px;
+    color: #fff;
+}
